@@ -1,0 +1,31 @@
+.Team {
+  text-align: center;
+}
+.team-pic {
+  width: 20vmax;
+}
+
+.champion-pic {
+  width: 10vmax;
+  height: 10vmax;
+}
+
+.team-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #133863;
+  font-family: "";
+}
+.blue-cards{
+  border-radius: 20px;
+  background-color:#133863; 
+  color: #ffde00;
+  margin: 20px
+}
+.App-link {
+  color: #61dafb;
+}

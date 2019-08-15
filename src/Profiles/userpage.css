@@ -1,0 +1,65 @@
+.UserPage {
+  background-color: #133863;
+  margin: 40px;
+  margin-right: 100px;
+  margin-left: 100px;
+  color: #ffde00;
+  font-family: "Bubblegum Sans", cursive;
+}
+
+.images {
+  width: 75%;
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome {
+  margin: 10px;
+  font: 50px;
+}
+.emblem {
+  width: fit-content;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+}
+
+.title1 {
+  text-align: center;
+  font-size: 45px;
+}
+
+.workshops {
+  float: right;
+  text-align: center;
+  justify-content: center;
+}
+.list {
+  font-size: 45px;
+}
+.top {
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.lists {
+  margin: 40px;
+  justify-content: center;
+}
+.accomplishments {
+  justify-content: center;
+}
+.steps {
+  justify-content: center;
+}
+
+.classes {
+  font-size: 35px;
+  margin: 10px;
+}
+.ProgressBar {
+  width: 100%;
+  height: 30px;
+}

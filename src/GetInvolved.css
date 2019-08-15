@@ -1,0 +1,117 @@
+.GetInvolved {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  font-family: "";
+}
+.row{
+justify-content: center;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Social {
+  background-color: #133863;
+  font-size: calc(10px + 2vmin);
+  padding: 2rem;
+  color: white;
+  flex-direction: column;
+  margin:40px;
+  border-radius: 20px;
+}
+
+.Sub-Form {
+  background: #ffde00;
+  color: #fefefe;
+  padding: 2rem;
+  border-radius: 0;
+  font-size: calc(20px + 2vmin);
+  margin:40px;
+  border-radius: 20px;
+}
+
+.input-Form {
+  font-size: calc(20px + 2vmin);
+}
+
+.Mentor {
+  background-color: #133863;
+  color: #fefefe;
+  padding: 2rem;
+  border-radius: 0;
+  font-size: calc(20px + 2vmin);
+  margin:40px;
+  border-radius: 20px;
+}
+
+.App-Sign {
+  color: #ffde00;
+}
+
+.Contact {
+  background-color: #ffde00;
+  color: #fefefe;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 0;
+  font-size: calc(12px + 2vmin);
+  margin:40px;
+  border-radius: 20px;
+}
+input{
+  margin: 10px;
+}
+input[type="text"],
+input[type="email"],
+select{
+  width: 400px;
+  padding: 12px;
+  border: 1px solid #133863;
+  border-radius: 3px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  resize: vertical;
+}
+
+textarea {
+  width: 480px;
+  padding: 4px 8px;
+  border: 1px solid #133863;
+  border-radius: 3px;
+  margin-top: 8px;
+  margin-bottom: 6px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #133863;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #133863;
+}

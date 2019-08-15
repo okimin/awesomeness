@@ -1,0 +1,46 @@
+.mainEvent{
+	text-align: center;
+}
+.yellow-event{
+  border-radius: 20px;
+  background-color:#ffde00; 
+  margin: 40px;
+  color:#133863;
+}
+.blue-event{
+  border-radius: 20px;
+  background-color:#133863; 
+  margin: 40px;
+  color:#ffde00;
+}
+.Launch-Party{
+  margin: 10px;
+  width: 17vmax;
+  height: 17vmax; 
+ border-radius: 20px;
+
+}
+.Ecuador{
+  margin:10px;
+  width: 20vmax;
+  height: 20vmax;	
+  border-radius: 20px;
+}
+.jelly-bean{
+  margin: 10px;
+  width: 20vmax;
+  height: 20vmax;	
+  border-radius: 20px;	
+}
+.leon-goldstein{
+  margin: 10px;
+  width: 25vmax;
+  height: 23vmax;	
+  border-radius: 20px;	
+}
+.nycsef{
+  margin: 10px;
+  width: 25vmax;
+  height: 23vmax;	
+  border-radius: 20px;	
+}
