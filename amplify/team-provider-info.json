@@ -9,6 +9,11 @@
             "UnauthRoleName": "stemhive-teamstar-20190819102410-unauthRole",
             "StackName": "stemhive-teamstar-20190819102410",
             "StackId": "arn:aws:cloudformation:us-east-2:265276598407:stack/stemhive-teamstar-20190819102410/034c9a80-c28d-11e9-8157-0a888d4075c6"
+        },
+        "categories": {
+            "auth": {
+                "stemhiveee64373b": {}
+            }
         }
     }
 }
