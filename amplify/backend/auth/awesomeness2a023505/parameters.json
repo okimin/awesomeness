@@ -1,8 +1,8 @@
 {
-    "identityPoolName": "stemhiveee64373b_identitypool_ee64373b",
+    "identityPoolName": "awesomeness2a023505_identitypool_2a023505",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "stemhiee64373b",
-    "userPoolName": "stemhiveee64373b_userpool_ee64373b",
+    "resourceNameTruncated": "awesom2a023505",
+    "userPoolName": "awesomeness2a023505_userpool_2a023505",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -28,9 +28,9 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "stemhiee64373b_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "awesom2a023505_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "resourceName": "stemhiveee64373b",
+    "resourceName": "awesomeness2a023505",
     "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {
         "Fn::GetAtt": [
@@ -45,10 +45,5 @@
         ]
     },
     "useDefault": "default",
-    "triggers": "{}",
-    "parentStack": {
-        "Ref": "AWS::StackId"
-    },
-    "permissions": [],
     "dependsOn": []
 }

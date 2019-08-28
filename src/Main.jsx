@@ -14,13 +14,15 @@ import { Link } from "react-router-dom";
 function Main() {
   return (
     <div className="Main">
-      <div className="welcome">
-        <h1>
-          <b>Welcome To Our Hive Community</b>
-        </h1>
-        <Link to="/idRoles">
-          <Button>Click To Get Started</Button>
-        </Link>
+      <div className="login">
+        <div className="welcome">
+          <h1>
+            <b>Welcome To Our Hive Community</b>
+          </h1>
+          <Link to="/idRoles">
+            <Button>Click To Get Started</Button>
+          </Link>
+        </div>
       </div>
       <div className="problem">
         <h2>

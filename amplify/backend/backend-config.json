@@ -1,15 +1,18 @@
 {
-	"hosting": {
-		"S3AndCloudFront": {
-			"service": "S3AndCloudFront",
-			"providerPlugin": "awscloudformation"
-		}
-	},
 	"auth": {
-		"stemhiveee64373b": {
+		"awesomeness2a023505": {
 			"service": "Cognito",
 			"providerPlugin": "awscloudformation",
 			"dependsOn": []
+		}
+	},
+	"api": {
+		"awesomeness": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"securityType": "AMAZON_COGNITO_USER_POOLS"
+			}
 		}
 	}
 }

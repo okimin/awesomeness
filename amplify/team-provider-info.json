@@ -1,18 +1,18 @@
 {
-    "teamstar": {
+    "stemhive": {
         "awscloudformation": {
-            "AuthRoleName": "stemhive-teamstar-20190819102410-authRole",
-            "UnauthRoleArn": "arn:aws:iam::265276598407:role/stemhive-teamstar-20190819102410-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::265276598407:role/stemhive-teamstar-20190819102410-authRole",
-            "Region": "us-east-2",
-            "DeploymentBucketName": "stemhive-teamstar-20190819102410-deployment",
-            "UnauthRoleName": "stemhive-teamstar-20190819102410-unauthRole",
-            "StackName": "stemhive-teamstar-20190819102410",
-            "StackId": "arn:aws:cloudformation:us-east-2:265276598407:stack/stemhive-teamstar-20190819102410/034c9a80-c28d-11e9-8157-0a888d4075c6"
+            "AuthRoleName": "awesomeness-stemhive-20190827130102-authRole",
+            "UnauthRoleArn": "arn:aws:iam::265276598407:role/awesomeness-stemhive-20190827130102-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::265276598407:role/awesomeness-stemhive-20190827130102-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "awesomeness-stemhive-20190827130102-deployment",
+            "UnauthRoleName": "awesomeness-stemhive-20190827130102-unauthRole",
+            "StackName": "awesomeness-stemhive-20190827130102",
+            "StackId": "arn:aws:cloudformation:us-east-1:265276598407:stack/awesomeness-stemhive-20190827130102/4019f1f0-c8ec-11e9-a49c-0e0a24f9b5c2"
         },
         "categories": {
             "auth": {
-                "stemhiveee64373b": {}
+                "awesomeness2a023505": {}
             }
         }
     }

@@ -1,11 +1,11 @@
 {
-    "projectName": "STEMHive",
+    "projectName": "awesomeness",
     "version": "2.0",
     "frontend": "javascript",
     "javascript": {
         "framework": "react",
         "config": {
-            "SourceDir": "/Users/owner/Desktop/Programming/awesomeness/src ",
+            "SourceDir": "src",
             "DistributionDir": "build",
             "BuildCommand": "npm run-script build",
             "StartCommand": "npm run-script start"
