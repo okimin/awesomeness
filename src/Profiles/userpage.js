@@ -144,4 +144,5 @@ class userpage extends Component {
   }
 }
 
-export default withAuthenticator(userpage, { signUpConfig });
+// export default withAuthenticator(userpage, { signUpConfig });
+export default userpage;
