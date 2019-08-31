@@ -13,6 +13,11 @@
         "categories": {
             "auth": {
                 "awesomeness2a023505": {}
+            },
+            "function": {
+                "awesomeness2a023505PostConfirmation": {
+                    "GROUP": "Students"
+                }
             }
         }
     }
