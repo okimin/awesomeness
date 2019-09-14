@@ -9,8 +9,6 @@ import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import ProgressBar from "react-bootstrap/ProgressBar";
 import { Button } from "react-bootstrap";
-import Amplify from "aws-amplify";
-import awsconfig from "./../aws-exports";
 import { withAuthenticator } from "aws-amplify-react";
 
 import "./userpage.css";
@@ -42,9 +40,9 @@ const signUpConfig = {
       type: "string"
     },
     {
-      label: "Custom Attribute",
+      label: "Are you an Facillitator or Student?",
       key: "custom_attr",
-      required: false,
+      required: true,
       displayOrder: 4,
       type: "string",
       custom: true
