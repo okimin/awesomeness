@@ -18,19 +18,22 @@
   color: #ffde00;
   border-radius: 20px;
 }
+.mission-pic{
+  float: left;
+  margin: 20px;
+  width: 10vmax;
+  height: 10vmax; 
+}
 
+.mission-text{
+  text-align: left;
+  margin: 20px;
+}
 .problem-pic{
 
   width: 15vmax;
   height: 15vmax;
   margin:25px;
-}
-.mission-pic{
-  float: left;
-  margin: 20px;
-  width: 10vmax;
-  height: 10vmax;
- 
 }
 
 .StandardPic {
@@ -51,11 +54,6 @@
   border-radius: 20px;
 }
 
-.mission-text{
-  text-align: left;
-  margin: 20px;
-  margin-top: 100px;
-}
 
 .solutions {
   background-color: #133863;
