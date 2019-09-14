@@ -9,8 +9,46 @@ import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import ProgressBar from "react-bootstrap/ProgressBar";
 import { Button } from "react-bootstrap";
+import { withAuthenticator } from "aws-amplify-react";
 
 import "./userpage.css";
+
+const signUpConfig = {
+  header: "My Customized Sign Up",
+  hideAllDefaults: true,
+  defaultCountryCode: "1",
+  signUpFields: [
+    {
+      label: "Email",
+      key: "email",
+      required: true,
+      displayOrder: 1,
+      type: "string"
+    },
+    {
+      label: "Password",
+      key: "password",
+      required: true,
+      displayOrder: 2,
+      type: "password"
+    },
+    {
+      label: "PhoneNumber",
+      key: "phone_number",
+      required: true,
+      displayOrder: 3,
+      type: "string"
+    },
+    {
+      label: "Are you an Facillitator or Student?",
+      key: "custom_attr",
+      required: true,
+      displayOrder: 4,
+      type: "string",
+      custom: true
+    }
+  ]
+};
 
 class userpage extends Component {
   state = {
@@ -104,4 +142,5 @@ class userpage extends Component {
   }
 }
 
+// export default withAuthenticator(userpage, { signUpConfig });
 export default userpage;

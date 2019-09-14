@@ -25,21 +25,23 @@ const Navigation = ({ history }) => (
           <Nav.Link eventKey={1} onClick={() => history.push("/GetInvolved")}>
             Get Involved
           </Nav.Link>
-        {  <Nav.Link eventKey={1} onClick={() => history.push("/Events")}>
-            Events
-          </Nav.Link>}
-          <Nav.Link eventKey={1} onClick={() => history.push("/Login")}>
+          {
+            <Nav.Link eventKey={1} onClick={() => history.push("/Events")}>
+              Events
+            </Nav.Link>
+          }
+          {/* <Nav.Link eventKey={1} onClick={() => history.push("/Login")}>
             Login
-          </Nav.Link>
-          {//<Nav.Link eventKey={1} onClick={() => history.push("/Register")}>
+          </Nav.Link> */}
+          {
+            //<Nav.Link eventKey={1} onClick={() => history.push("/Register")}>
             //Register
-          //</Nav.Link>
-        }
-          
+            //</Nav.Link>
+          }
+
           <Nav.Link eventKey={1} onClick={() => history.push("/Userpage")}>
             User
           </Nav.Link>
-          
         </Nav>
       </Navbar.Collapse>
     </Navbar>
