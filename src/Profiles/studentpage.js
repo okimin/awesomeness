@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { withAuthenticator } from "aws-amplify-react";
-import { Auth } from "aws-amplify";
 
 const signUpConfig = {
   header: "Register To Be Part Of The Hive",
@@ -43,39 +41,12 @@ function App() {
   const [isStudent, updateStudentInfo] = useState(false);
   const [isFacilitator, updateFacilitatorInfo] = useState(false);
   var userType = "";
-  useEffect(() => {
-    /* Get the AWS credentials for the current user from Identity Pools.  */
-    Auth.currentSession()
-      .then(cognitoUser => {
-        const {
-          idToken: { payload }
-        } = cognitoUser;
-        /* Loop through the groups that the user is a member of */
-        /* Set isStudent to true if the user is part of the STUDENTS group */
-        payload["cognito:groups"] &&
-          payload["cognito:groups"].forEach(group => {
-            if (group === "STUDENTS") {
-              updateStudentInfo(true);
-              userType = "Student";
-            } else if (group === "FACILITATORS") {
-              updateFacilitatorInfo(true);
-              userType = "Facilitator";
-            }
-          });
-      })
-      .catch(err => console.log(err));
-  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        {(isStudent || isFacilitator) && <h1>Welcome, {userType}!</h1>}
-      </header>
+      <header className="App-header">{<h1>Welcome, Player!</h1>}</header>
     </div>
   );
 }
 
-export default withAuthenticator(
-  App,
-  { signUpConfig },
-  { includeGreetings: true }
-);
+export default App;
