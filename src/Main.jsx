@@ -8,6 +8,10 @@ import team2 from "./images/team/hexDaniel.png";
 import emblems from "./images/solutions/emblems.png";
 import mentoring from "./images/solutions/mentoring.png";
 import workshops from "./images/solutions/workshops.png";
+import interest from "./images/interestGraph.png";
+import stats from "./images/stats.png";
+import survey from "./images/Survey.png";
+
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
@@ -24,30 +28,14 @@ function Main() {
           </Link>
         </div>
       </div>
-      <div className="problem">
-        <h2>
-          <u>
-            <b>Problem</b>
-          </u>
-        </h2>
-        <img src={team2} className="wrap-pic" alt="place holder" />
-        <p className="problem-text">
-          Less than 11% of women of color pursue a STEM-based bachelor degree
-          out of 50% of women in the United States. In our customer discovery,
-          we found out that 81% of girls can’t even name a female role model in
-          stem. According to Microsoft, girls from the ages 9 - 15 gained an
-          interest in STEM, but when it is time to go college, they choose not
-          to make STEM their first choice for picking a major
-        </p>
-      </div>
-      <div className="mission">
+       <div className="mission">
         <h2>
           <u>
             <b>Mission</b>
           </u>
         </h2>
-        <div className="mission-pic">
-          <img src={team2} className="wrap-pic" alt="place holder" />
+        <div>
+          <img src={team2} className="mission-pic" alt="place holder" />
         </div>
         <p className="mission-text">
           STEMHIVE strives to engage and retain interest to low-income middle
@@ -56,6 +44,61 @@ function Main() {
           further increase women representation in related fields.
         </p>
       </div>
+
+      <div className="problem">
+       <h2 className="Problem-title">
+          <u>
+            <b>Problem</b>
+          </u>
+        </h2>
+        <Container className="align-container">
+          <div className="yellow-cards">
+            <Row className="colorRow">
+              <Col xs={4}>
+                <img src={stats} className="problem-pic" alt="Mentoring" />
+              </Col>
+              <Col>
+                <p className="explain-text">
+                <br/>
+                  Less than 11% of women of color pursue a STEM-based bachelor degree
+          out of 50% of women in the United States.
+                </p>
+              </Col>
+            </Row>
+          </div>
+          <div className="yellow-cards">
+            <Row className="colorRow">
+              <Col xs={4}>
+                <img src={survey} className="problem-pic" alt="Workshops" />
+              </Col>
+              <Col>
+                <p className="explain-text">
+                <br/>
+                  In our customer discovery,
+                  we found out that 81% of girls can’t even name a female role model in
+                  stem.
+              </p>
+              </Col>
+            </Row>
+          </div>
+          <div className="yellow-cards">
+            <Row className="colorRow">
+              <Col xs={4}>
+                <img src={interest} className="problem-pic" alt="Emblems" />
+              </Col>
+              <Col>
+                <p className="explain-text">
+                <br/>
+                According to Microsoft, girls from the ages 9 - 15 gained an
+                interest in STEM, but when it is time to go college, they choose not
+                to make STEM their first choice for picking a major
+                </p>
+              </Col>
+            </Row>
+          </div>
+        </Container>
+      </div>     
+
       <div className="solutions">
         <h2>
           <u>
@@ -106,7 +149,7 @@ function Main() {
                 <img src={mentoring} className="solution-pic" alt="Mentoring" />
               </Col>
               <Col>
-                <p className="explain-text">
+                <p>
                   We want to provide a middle school student with a local high
                   school role model to give her new perspectives and insights to
                   act on her interests in STEM.
@@ -123,7 +166,7 @@ function Main() {
                 <img src={workshops} className="solution-pic" alt="Workshops" />
               </Col>
               <Col>
-                <p className="explain-text">
+                <p>
                   Girls will take part in a project based curriculum, where they
                   learn real skills that they can apply to their future careers.
                 </p>
@@ -139,7 +182,7 @@ function Main() {
                 <img src={emblems} className="solution-pic" alt="Emblems" />
               </Col>
               <Col>
-                <p className="explain-text">
+                <p >
                   In a gamified experience, girls will be awarded rewards for
                   going through workshops and certain tasks. These awards
                   include museum tickets, opportunities to go on exclusive
@@ -150,15 +193,7 @@ function Main() {
           </div>
         </Container>
       </div>
-      <div className="stats">
-        <h2>
-          <u>
-            <b>Stats</b>
-          </u>
-        </h2>
-        <img src={team2} alt="place holder" className="stats-place-holder" />
-        <p className="stats-text">mprehensam scripserit eos ei. Fugit laudem</p>
-      </div>
+     
     </div>
   );
 }
