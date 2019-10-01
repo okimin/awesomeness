@@ -6,9 +6,7 @@
   background-size: cover;
   height: 90vh;
 }
-.app{
-	text-align: center;
-}
+
 body{  
   background-image: url('./images/Banner-min.jpg');
   -webkit-background-size: cover;
