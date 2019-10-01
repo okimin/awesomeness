@@ -5,7 +5,7 @@
   font-size: calc(10px + 2vmin);
   font-family: "";
 }
-.Problem-title{
+.Problem-title {
   text-align: center;
   margin: 20px;
 }
@@ -18,22 +18,21 @@
   color: #ffde00;
   border-radius: 20px;
 }
-.mission-pic{
+.mission-pic {
   float: left;
   margin: 20px;
   width: 10vmax;
-  height: 10vmax; 
+  height: 10vmax;
 }
 
-.mission-text{
+.mission-text {
   text-align: left;
   margin: 20px;
 }
-.problem-pic{
-
+.problem-pic {
   width: 15vmax;
   height: 15vmax;
-  margin:25px;
+  margin: 25px;
 }
 
 .StandardPic {
@@ -54,21 +53,18 @@
   border-radius: 20px;
 }
 
-
 .solutions {
   background-color: #133863;
   color: #ffde00;
 
   text-align: center;
   float: left;
-  margin:40px; 
-  border-radius: 20px
-
+  margin: 40px;
+  border-radius: 20px;
 }
-.solution-explain{
+.solution-explain {
   color: #133863;
-  border-radius: 20px
-
+  border-radius: 20px;
 }
 .solution-pic {
   width: 10vmax;
@@ -85,7 +81,6 @@
   margin-right: 10px;
   text-align: center;
   background-color: #ffde00;
-
 }
 .colorRow {
   background-color: #ffde00;
@@ -93,9 +88,9 @@
   margin-top: 0px;
   margin-left: 15px;
 }
-.yellow-cards{
+.yellow-cards {
   border-radius: 20px;
-  background-color:#ffde00; 
+  background-color: #ffde00;
 }
 .align-container {
   justify-content: center;

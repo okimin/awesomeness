@@ -16,18 +16,18 @@ class GetInvolved extends Component {
       name: "",
       email: "",
       subject: ""
-    }
-    this.handleChange = this.handleChange(this)
-    this.handleSubmit = this.handleSubmit.bind(this)
+    };
+    //this.handleChange = this.handleChange(this);
+    //this.handleSubmit = this.handleSubmit.bind(this);
   }
-  handleChange = e => {
-    this.setState({ [e.target.name]: e.target.value });
-  }
-  
-   async handleSubmit(e) {
-       e.preventDefault()
-    const { name, email, subject } = this.state;
+  handleSubjectChange = e => {
+    this.setState({ subject: e.target.value });
   };
+
+  handleSubmit(e) {
+    e.preventDefault();
+    const { name, email, subject } = this.state;
+  }
   render() {
     const { email, subject } = this.state;
     const isEnabled = subject.length > 20;
@@ -94,7 +94,7 @@ class GetInvolved extends Component {
               id="fname"
               name="firstname"
               placeholder="John S."
-              onChange={this.handleChange}
+              //onChange={this.handleChange}
               required
             />
 
@@ -105,7 +105,7 @@ class GetInvolved extends Component {
               id="email"
               name="email"
               placeholder="contact@email.com"
-              onChange={this.handleChange}
+              //onChange={this.handleChange}
             />
 
             <br />
@@ -117,7 +117,7 @@ class GetInvolved extends Component {
               placeholder="Tell us something.."
               rows="5"
               value={this.state.subject}
-              onChange={this.handleChange}
+              onChange={this.handleSubjectChange}
               required
             />
 

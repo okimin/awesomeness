@@ -28,7 +28,7 @@ function Main() {
           </Link>
         </div>
       </div>
-       <div className="mission">
+      <div className="mission">
         <h2>
           <u>
             <b>Mission</b>
@@ -43,7 +43,7 @@ function Main() {
       </div>
 
       <div className="problem">
-       <h2 className="Problem-title">
+        <h2 className="Problem-title">
           <u>
             <b>Problem</b>
           </u>
@@ -56,9 +56,9 @@ function Main() {
               </Col>
               <Col>
                 <p className="explain-text">
-                <br/>
-                  Less than 11% of women of color pursue a STEM-based bachelor degree
-          out of 50% of women in the United States.
+                  <br />
+                  Less than 11% of women of color pursue a STEM-based bachelor
+                  degree out of 50% of women in the United States.
                 </p>
               </Col>
             </Row>
@@ -70,11 +70,10 @@ function Main() {
               </Col>
               <Col>
                 <p className="explain-text">
-                <br/>
-                  In our customer discovery,
-                  we found out that 81% of girls can’t even name a female role model in
-                  stem.
-              </p>
+                  <br />
+                  In our customer discovery, we found out that 81% of girls
+                  can’t even name a female role model in stem.
+                </p>
               </Col>
             </Row>
           </div>
@@ -85,16 +84,16 @@ function Main() {
               </Col>
               <Col>
                 <p className="explain-text">
-                <br/>
-                According to Microsoft, girls from the ages 9 - 15 gained an
-                interest in STEM, but when it is time to go college, they choose not
-                to make STEM their first choice for picking a major
+                  <br />
+                  According to Microsoft, girls from the ages 9 - 15 gained an
+                  interest in STEM, but when it is time to go college, they
+                  choose not to make STEM their first choice for picking a major
                 </p>
               </Col>
             </Row>
           </div>
         </Container>
-      </div>     
+      </div>
 
       <div className="solutions">
         <h2>
@@ -179,7 +178,7 @@ function Main() {
                 <img src={emblems} className="solution-pic" alt="Emblems" />
               </Col>
               <Col>
-                <p >
+                <p>
                   In a gamified experience, girls will be awarded rewards for
                   going through workshops and certain tasks. These awards
                   include museum tickets, opportunities to go on exclusive
@@ -190,7 +189,6 @@ function Main() {
           </div>
         </Container>
       </div>
-     
     </div>
   );
 }
