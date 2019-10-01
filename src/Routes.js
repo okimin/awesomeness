@@ -3,7 +3,6 @@ import { Route, Switch } from "react-router-dom";
 
 import Navigation from "./Navigation";
 import Main from "./Main";
-import Landing from "./Landing";
 import GetInvolved from "./GetInvolved";
 import Events from "./Events";
 import Login from "./containers/Login";

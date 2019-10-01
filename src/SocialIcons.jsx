@@ -2,11 +2,11 @@ import React from 'react';
 //import { Button } from 'react-bootstrap';
 import { SocialIcon } from 'react-social-icons';
 import logo from './logo.svg';
-import './Landing.css';
+import './SocialIcons.css';
 
 function Landing() {
 	return (
-		<div className="landing">
+		<div className="Main-socialIcons">
 			<div className="social-links">
 				<SocialIcon
 					url="https://twitter.com/stemhivenyc"
@@ -29,22 +29,6 @@ function Landing() {
 					fgColor="#ffffff"
 				/>
 			</div>
-			 <div className="new-app">
-      			<header className="App-header">
-        		<img src={logo} className="App-logo" alt="logo" />
-        		
-        		<a
-          		className="App-link"
-          		href="https://www.stemhivenyc.org/"
-          		target="_blank"
-          		rel="noopener noreferrer"
-        		>
-          		Learn more about us!
-        		</a>
-      			</header>
-    		</div>
-
-
 		</div>
 	);
 }

@@ -150,15 +150,6 @@ function Main() {
           </div>
         </Container>
       </div>
-      <div className="stats">
-        <h2>
-          <u>
-            <b>Stats</b>
-          </u>
-        </h2>
-        <img src={team2} alt="place holder" className="stats-place-holder" />
-        <p className="stats-text">mprehensam scripserit eos ei. Fugit laudem</p>
-      </div>
     </div>
   );
 }

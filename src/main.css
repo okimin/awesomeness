@@ -102,19 +102,3 @@
   height: 55vmax;
   border-radius: 20px;
 }
-.stats {
-  background-color: #133863;
-  text-align: center;
-  margin-top: 120px;
-  margin: 40px;
-  float: left;
-  border-radius: 20px;
-  color: #ffde00;
-}
-.stats-place-holder {
-  width: 14vmax;
-  height: 10vmax;
-}
-.stats-text {
-  margin-top: 0px;
-}
