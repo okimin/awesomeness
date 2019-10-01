@@ -1,11 +1,13 @@
 .mainEvent{
 	text-align: center;
 }
+/* This is no longer a yellow event, its a grey event... not sure if I have to changing the name will cause errors
+  so I'll leave it like this for now*/
 .yellow-event{
   border-radius: 20px;
-  background-color:#ffde00; 
+  background-color:#282c34; 
   margin: 40px;
-  color:#133863;
+  color:#ffde00;
 }
 .blue-event{
   border-radius: 20px;

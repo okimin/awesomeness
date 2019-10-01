@@ -2,7 +2,7 @@ import React from "react";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
-import "./main.css";
+import "./Main.css";
 
 import team2 from "./images/team/hexDaniel.png";
 import emblems from "./images/solutions/emblems.png";

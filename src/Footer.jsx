@@ -9,7 +9,11 @@ function Footer(){
 
 				<SocialIcons className="sc"/>
 				<div className ="copyright">
+<<<<<<< HEAD
 					&copy;StemHive.inc
+=======
+					&copy;StemHive inc
+>>>>>>> amplify
 				</div>
 			</header>
 

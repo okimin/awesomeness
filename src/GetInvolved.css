@@ -41,7 +41,7 @@ justify-content: center;
 }
 
 .Sub-Form {
-  background: #ffde00;
+  background: #282c34;
   color: #fefefe;
   padding: 2rem;
   border-radius: 0;
@@ -69,7 +69,7 @@ justify-content: center;
 }
 
 .Contact {
-  background-color: #ffde00;
+  background-color: #282c34;
   color: #fefefe;
   flex-direction: column;
   padding: 2rem;
