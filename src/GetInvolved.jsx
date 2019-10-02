@@ -1,3 +1,6 @@
+/*eslint-env es_modules */
+/*globals render */
+//hey
 import React, { Component } from "react";
 import logo from "./images/brands/logo.png";
 import "./GetInvolved.css";
@@ -10,23 +13,26 @@ class GetInvolved extends Component {
   constructor() {
     super();
     this.state = {
+      name: "",
+      email: "",
       subject: ""
-    };
+    }
+    //this.handleChange = this.handleChange(this)
+    //this.handleSubmit = this.handleSubmit.bind(this)
   }
-  handleSubjectChange = evt => {
-    this.setState({ subject: evt.target.value });
-  };
-  handleSubmit = () => {
-    const { subject } = this.state;
+  handleChange = e => {
+    this.setState({ subject: e.target.value });
+  }
+  
+   async handleSubmit(e) {
+       e.preventDefault()
+    const { name, email, subject } = this.state;
   };
   render() {
-    const { subject } = this.state;
+    const { email, subject } = this.state;
     const isEnabled = subject.length > 20;
     return (
       <div className="GetInvolved">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-        </header>
         <div className="Social">
           <h1>Follow us on Social Media!</h1>
           <div className="row">
@@ -88,6 +94,8 @@ class GetInvolved extends Component {
               id="fname"
               name="firstname"
               placeholder="John S."
+              //onChange={this.handleChange}
+              required
             />
 
             <br />
@@ -96,7 +104,8 @@ class GetInvolved extends Component {
               type="email"
               id="email"
               name="email"
-              placeholder="contact@email.com"
+              //placeholder="contact@email.com"
+              onChange={this.handleChange}
             />
 
             <br />
@@ -108,7 +117,8 @@ class GetInvolved extends Component {
               placeholder="Tell us something.."
               rows="5"
               value={this.state.subject}
-              onChange={this.handleSubjectChange}
+              //onChange={this.handleChange}
+              required
             />
 
             <br />
