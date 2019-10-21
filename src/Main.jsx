@@ -18,7 +18,7 @@ import { Link } from "react-router-dom";
 function Main() {
   return (
     <div className="Main">
-      <div className="login">
+      {/*<div className="login">
         <div className="welcome">
           <h1>
             <b>Welcome To Our Hive Community</b>
@@ -28,6 +28,7 @@ function Main() {
           </Link>
         </div>
       </div>
+    */}
        <div className="mission">
         <h2>
           <u>
