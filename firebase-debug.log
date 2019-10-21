@@ -1,0 +1,25 @@
+[debug] [2019-10-21T04:30:28.944Z] ----------------------------------------------------------------------
+[debug] [2019-10-21T04:30:28.946Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2019-10-21T04:30:28.947Z] CLI Version:   7.3.2
+[debug] [2019-10-21T04:30:28.947Z] Platform:      darwin
+[debug] [2019-10-21T04:30:28.947Z] Node Version:  v10.13.0
+[debug] [2019-10-21T04:30:28.948Z] Time:          Mon Oct 21 2019 00:30:28 GMT-0400 (Eastern Daylight Time)
+[debug] [2019-10-21T04:30:28.948Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-10-21T04:30:28.958Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-10-21T04:30:28.959Z] > authorizing via signed-in user
+[debug] [2019-10-21T04:30:28.959Z] [iam] checking project awesomness-9b304 for permissions ["firebase.projects.get"]
+[debug] [2019-10-21T04:30:28.960Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/awesomness-9b304:testIamPermissions  
+
+[debug] [2019-10-21T04:30:29.234Z] <<< HTTP RESPONSE 200
+[debug] [2019-10-21T04:30:29.236Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/awesomness-9b304  
+ 
+[debug] [2019-10-21T04:30:29.492Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/owner/Desktop/Programming/awesomeness'...
+[info] 
+[debug] [2019-10-21T04:30:29.495Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/awesomness-9b304/webApps/-/config  
+ 
+[debug] [2019-10-21T04:30:29.902Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
