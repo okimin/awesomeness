@@ -5,10 +5,6 @@
   font-size: calc(10px + 2vmin);
   font-family: "";
 }
-.Problem-title{
-  text-align: center;
-  margin: 20px;
-}
 
 .mission {
   background-color: #133863;
@@ -18,12 +14,6 @@
   color: #ffde00;
   border-radius: 20px;
 }
-.mission-pic{
-  float: left;
-  margin: 20px;
-  width: 10vmax;
-  height: 10vmax; 
-}
 
 .mission-text{
   text-align: left;
@@ -31,27 +21,17 @@
 }
 .problem-pic{
 
-  width: 15vmax;
-  height: 15vmax;
+  width: 10vmax;
+  height: 10vmax;
   margin:25px;
 }
 
-.StandardPic {
-  width: 20vmax;
-  height: 20vmax;
-  margin: 30px;
-}
 .place-holder {
   margin: 40px;
   width: 10vmax;
   height: 10vmax;
 }
 
-.mission {
-  background-color: #282c34;
-  text-align: center;
-  margin: 40px;
-}
 .problem {
   margin: 0px 70px 0px 70px;
   margin-top: 20px;
@@ -63,11 +43,11 @@
 .solutions {
   background-color: #133863;
   color: #ffde00;
-
   text-align: center;
   float: left;
   margin:40px; 
-  border-radius: 20px
+  border-radius: 20px;
+  position: static;
 
 }
 .solution-explain{
@@ -80,16 +60,15 @@
   height: 10vmax;
   margin-left: 0px;
   margin-right: 20px;
-  margin-top: 0px;
+  margin-top: 100px;
   margin: 0px;
 }
 .title {
-  margin-left: 15px;
-  margin-bottom: 0px;
-  margin-top: 50px;
-  margin-right: 10px;
   text-align: center;
+  margin: 20px;
+  margin-bottom: 5px;
   background-color: #282c34;
+  border-radius: 20px;
 
 }
 .colorRow {
@@ -97,14 +76,19 @@
   margin: 10px;
   margin-top: 0px;
   margin-left: 15px;
-}
-.yellow-cards{
   border-radius: 20px;
-  background-color:#282c34;
+  position: relative;
+
 }
 .align-container {
+
   justify-content: center;
-  width: 60vmax;
-  height: 55vmax;
+  max-width: 60vmax;
+  max-height: 55vmax;
+  min-height: 30vmax;
+  min-width:  45vmax;
   border-radius: 20px;
+  position: sticky;
+  display: block;
+
 }

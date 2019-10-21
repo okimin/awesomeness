@@ -32,8 +32,8 @@ class GetInvolved extends Component {
     const { email, subject } = this.state;
     const isEnabled = subject.length > 20;
     return (
-      <div className="GetInvolved">
-        <div className="Social">
+     <div className="GetInvolved">
+        {/* <div className="Social">
           <h1>Follow us on Social Media!</h1>
           <div className="row">
             <SocialIcon
@@ -62,6 +62,7 @@ class GetInvolved extends Component {
             />
           </div>
         </div>
+      */}
         <div className="Sub-Form">
           <h1>Subscribe to our Newsletter!</h1>
           <p>

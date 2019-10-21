@@ -4,9 +4,9 @@
 	clear: both;
 	display: flex;
 	flex-direction: column-reverse;
-	/*position: static*/
+	position: static
 }
 
 .copyright{
-	font-size: 3vmax;
+	font-size: 2vmax;
 }

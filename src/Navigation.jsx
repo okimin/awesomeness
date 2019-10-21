@@ -37,11 +37,12 @@ const Navigation = ({ history }) => (
             //<Nav.Link eventKey={1} onClick={() => history.push("/Register")}>
             //Register
             //</Nav.Link>
-          }
+          
 
-          <Nav.Link eventKey={1} onClick={() => history.push("/Userpage")}>
-            User
-          </Nav.Link>
+        //  <Nav.Link eventKey={1} onClick={() => history.push("/Userpage")}>
+         //   User
+         // </Nav.Link>
+        }
         </Nav>
       </Navbar.Collapse>
     </Navbar>
