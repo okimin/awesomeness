@@ -6,7 +6,7 @@ function identifyRole() {
   return (
     <div className="roles">
       <h2> Are You A </h2>
-      <Link to="/Register/student">
+      <Link to= "/Register/student">
         <Button>Student</Button>
       </Link>
       <Link to="/Register/admin">

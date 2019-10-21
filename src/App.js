@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
 import Routes from "./Routes";
 import Navigation from "./Navigation";
+import Footer from "./Footer";
 
 class App extends Component {
   render() {
@@ -11,6 +12,7 @@ class App extends Component {
       <div className="App">
         <Navigation />
         <Routes />
+        <Footer/>
       </div>
     );
   }

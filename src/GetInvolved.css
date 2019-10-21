@@ -26,7 +26,7 @@ justify-content: center;
 }
 
 .Sub-Form {
-  background: #ffde00;
+  background: #133863;
   color: #fefefe;
   padding: 2rem;
   border-radius: 0;
@@ -40,7 +40,7 @@ justify-content: center;
 }
 
 .Mentor {
-  background-color: #133863;
+  background-color: #282c34 ;
   color: #fefefe;
   padding: 2rem;
   border-radius: 0;
@@ -54,7 +54,7 @@ justify-content: center;
 }
 
 .Contact {
-  background-color: #ffde00;
+  background-color: #133863;
   color: #fefefe;
   flex-direction: column;
   padding: 2rem;

@@ -1,0 +1,12 @@
+.mainFooter{
+	background-color: #282c34;
+	color: #FFFF;
+	clear: both;
+	display: flex;
+	flex-direction: column-reverse;
+	position: static
+}
+
+.copyright{
+	font-size: 2vmax;
+}

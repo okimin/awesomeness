@@ -16,12 +16,17 @@ class GetInvolved extends Component {
       name: "",
       email: "",
       subject: ""
-    };
-    //this.handleChange = this.handleChange(this);
-    //this.handleSubmit = this.handleSubmit.bind(this);
+    }
+    //this.handleChange = this.handleChange(this)
+    //this.handleSubmit = this.handleSubmit.bind(this)
   }
-  handleSubjectChange = e => {
+  handleChange = e => {
     this.setState({ subject: e.target.value });
+  }
+  
+   async handleSubmit(e) {
+       e.preventDefault()
+    const { name, email, subject } = this.state;
   };
 
   handleSubmit(e) {
@@ -32,8 +37,8 @@ class GetInvolved extends Component {
     const { email, subject } = this.state;
     const isEnabled = subject.length > 20;
     return (
-      <div className="GetInvolved">
-        <div className="Social">
+     <div className="GetInvolved">
+        {/* <div className="Social">
           <h1>Follow us on Social Media!</h1>
           <div className="row">
             <SocialIcon
@@ -62,6 +67,7 @@ class GetInvolved extends Component {
             />
           </div>
         </div>
+      */}
         <div className="Sub-Form">
           <h1>Subscribe to our Newsletter!</h1>
           <p>
@@ -106,6 +112,7 @@ class GetInvolved extends Component {
               name="email"
               placeholder="contact@email.com"
               //onChange={this.handleChange}
+              onChange={this.handleChange}
             />
 
             <br />
@@ -118,6 +125,7 @@ class GetInvolved extends Component {
               rows="5"
               value={this.state.subject}
               onChange={this.handleSubjectChange}
+              //onChange={this.handleChange}
               required
             />
 

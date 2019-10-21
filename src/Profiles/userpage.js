@@ -9,6 +9,7 @@ import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import ProgressBar from "react-bootstrap/ProgressBar";
 import { Button } from "react-bootstrap";
+import "./userpage.css";
 
 const signUpConfig = {
   header: "My Customized Sign Up",

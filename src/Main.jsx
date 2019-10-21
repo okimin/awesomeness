@@ -18,7 +18,7 @@ import { Link } from "react-router-dom";
 function Main() {
   return (
     <div className="Main">
-      <div className="login">
+      {/*<div className="login">
         <div className="welcome">
           <h1>
             <b>Welcome To Our Hive Community</b>
@@ -28,7 +28,10 @@ function Main() {
           </Link>
         </div>
       </div>
-      <div className="mission">
+    */}
+       <div className="mission">
+{//
+}
         <h2>
           <u>
             <b>Mission</b>
@@ -42,14 +45,14 @@ function Main() {
         </p>
       </div>
 
-      <div className="problem">
-        <h2 className="Problem-title">
-          <u>
+      <div className="problem">   
+        <Container className="align-container">
+          <h2 className="title">
+         <u>
             <b>Problem</b>
           </u>
         </h2>
-        <Container className="align-container">
-          <div className="yellow-cards">
+          <div className="grey-cards">
             <Row className="colorRow">
               <Col xs={4}>
                 <img src={stats} className="problem-pic" alt="Mentoring" />
@@ -63,7 +66,7 @@ function Main() {
               </Col>
             </Row>
           </div>
-          <div className="yellow-cards">
+          <div className="grey-cards">
             <Row className="colorRow">
               <Col xs={4}>
                 <img src={survey} className="problem-pic" alt="Workshops" />
@@ -77,7 +80,7 @@ function Main() {
               </Col>
             </Row>
           </div>
-          <div className="yellow-cards">
+          <div className="grey-cards">
             <Row className="colorRow">
               <Col xs={4}>
                 <img src={interest} className="problem-pic" alt="Emblems" />
@@ -136,7 +139,7 @@ function Main() {
       </div>
       <div className="solution-explain">
         <Container className="align-container">
-          <div className="yellow-cards">
+          <div className="grey-cards">
             <p className="title">
               <b>Mentoring</b>
             </p>
@@ -153,7 +156,7 @@ function Main() {
               </Col>
             </Row>
           </div>
-          <div className="yellow-cards">
+          <div className="grey-cards">
             <p className="title">
               <b>Workshops</b>
             </p>
@@ -169,7 +172,7 @@ function Main() {
               </Col>
             </Row>
           </div>
-          <div className="yellow-cards">
+          <div className="grey-cards">
             <p className="title">
               <b>Emblems</b>
             </p>

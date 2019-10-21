@@ -1,12 +1,10 @@
-.landing {
-	
+.landing {	
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   height: 90vh;
 }
-
 body{  
   background-image: url('./images/Banner-min.jpg');
   -webkit-background-size: cover;
@@ -14,7 +12,5 @@ body{
   -o-background-size: cover;
   background-size: cover;
   height: 92.5vh;
-  background-color: #ffde00;
-  
-
+  background-color: #ffde00;  
 }
