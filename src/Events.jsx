@@ -29,8 +29,11 @@ function Events() {
 		<div className='mainEvent'>
 			<header className='eventHeader'>
 			<div className='blue-event'>
-				<h3>NYSCEF</h3>				
-				<p>this event had a few things go on</p>
+				<h3>New York Science and Engineering Fair</h3>				
+                    <p>Our very first STEMHive tabling event at our own campus.
+                        Here we talked to high schools students and parents to learn more about why they were inspired to learn about STEM.
+                        We even posted a board titled "What do you love about STEM?"
+                        And we were shocked about the amount of responses we got from that. </p>
 				<Container className='C1'>
 					<Row>
 						<Col>
@@ -44,7 +47,11 @@ function Events() {
 			</div>
 			<div className='yellow-event'>
 				<h3>Leon Goldstein</h3>				
-				<p>this event had a few things go on</p>
+                    <p>We visited Leon M. Goldstein to talk more to the high school students about the importance of women in STEM.
+                        We first challenged them to a game of Kahoot to see how far do they know about the important women in STEM.
+                        We then discussed about our mission  and how our method can help our kids younger than them.
+                        But then we challenge them once again to see if they can create various solutions of their own.
+                        It was amazing to see how diverse their ideas were.</p>
 				<Container className='C1'>
 					<Row>
 						<Col>
@@ -60,8 +67,11 @@ function Events() {
 				</Container>				
 			</div>	
 			<div className='blue-event'>
-				<h3>Launch Party</h3>
-				<p>this event had a few things go on</p>
+				<h3>Launch Party With Beyond the Margins</h3>
+                    <p>We collaborated with Beyond the Margins, another startup with similar goals of aiding the younger generation on hosting our very own launch party.
+                        During the day, kids around 9-13 experience exciting topics in different subjects and seeing that learning can be cool.
+                        They then go through various challenges in those subjects, including kids in the STEM group going through STEMHive's variation of the lunar lander challenge, where they prototype designs to protect their mini astronauts from falling out of their spaceship.
+                        Throughout the challenges, the kids were mentored by STEMHive-trained high school students and they felt the connection of talking to someone around their same age with the same interests.</p>
 				<Container className='C1'>
 					<Row>
 						<Col>
@@ -82,8 +92,11 @@ function Events() {
 				</Container>
 			</div>
 			<div className='yellow-event'>
-				<h3>Ecuador Trip</h3>	
-				<p>this event had a few things go on</p>
+				<h3>Spreading STEM Internationally</h3>	
+                    <p>One of our goals is to increase the representation of women, not only in the U.S but on an international scale.
+                        Our C.F.O, Karla Giselle, took a first step to that when she hosted a STEM Hive workshop in Ecauador.
+                        There she educate girls on the value of STEM. She even showed that even with limited resources, STEM can be exciting to demonstrate as challenged the kids to make architect using tooth picks and clay.
+                        We hope to spread this energy to many other countries just like Karla has done for Ecaudor.</p>
 				<Container className='C1'>
 					<Row>
 						<Col>
@@ -108,27 +121,6 @@ function Events() {
               		</Row>
 				</Container>
 			</div>	
-			<div className='blue-event'>
-				<h3>Jelly Bean</h3>		
-				<p>this event had a few things go on</p>
-				<Container className='C1'>
-					<Row>
-						<Col>
-                			<img src={Jelly_Bean1} className="jelly-bean" alt="pic1" />
-              			</Col>
-              			<Col>
-                			<img src={Jelly_Bean2} className="jelly-bean" alt="pic2" />
-              			</Col>
-              			<Col>
-                			<img src={Jelly_Bean3} className="jelly-bean" alt="pic3" />
-              			</Col>
-              			<Col>
-                			<img src={Jelly_Bean4} className="jelly-bean" alt="pic4" />              
-              			</Col>
-					</Row>
-				</Container>
-			</div>
-					
 
 			</header>
 		</div>
