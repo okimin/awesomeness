@@ -1,11 +1,20 @@
 .user {
-  font-family: "Bubblegum Sans", cursive;
+	font-family: 'Bubblegum Sans', cursive;
+	position: absolute;
+	width: 100%;
+}
+.name {
+	margin-top: auto;
+}
+.profile-img {
+	position: relative;
+	bottom: -15px;
 }
 .profile {
-  background-color: white;
+	background-color: white;
 }
 
 .logistics {
-  background-color: blue;
-  color: white;
+	background-color: blue;
+	color: white;
 }
