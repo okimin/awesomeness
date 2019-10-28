@@ -7,11 +7,28 @@ import firebase from '../firebase';
 
 var db = firebase.firestore();
 
-// The following is to add users to our collection
-// const userRef = db.collection(“users”).add({
-//   fullname: this.state.fullname,
-//   email: this.state.email
-// });
+/*
+ADDING THINGS TO FIRESTORE
+
+ The following is to add users to our collection
+
+ const userRef = db.collection(“users”).add({
+   fullname: this.state.fullname,
+   email: this.state.email
+ });
+
+ An alternative way:
+
+ let data = {
+  name: 'Los Angeles',
+  state: 'CA',
+  country: 'USA'
+};
+
+You can also specify the document and add to your collection:
+
+let setDoc = db.collection('cities').doc('LA').set(data);
+*/
 
 class UserPage extends Component {
 	constructor() {
