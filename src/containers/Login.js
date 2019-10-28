@@ -1,6 +1,12 @@
 import React, { Component } from "react";
-import { Button, FormGroup, FormControl, FormLabel } from "react-bootstrap";
-import { Link } from "react-router-dom"
+import {
+  Button,
+  Form,
+  FormGroup,
+  FormControl,
+  FormLabel
+} from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "./Login.css";
 
 export default class Login extends Component {
@@ -56,7 +62,9 @@ export default class Login extends Component {
           >
             Login
           </Button>
-         <p>Don't have an account?<Link to ="/Register"> Register here!</Link></p>
+          <p>
+            Don't have an account?<Link to="/Register"> Register here!</Link>
+          </p>
         </form>
       </div>
     );
