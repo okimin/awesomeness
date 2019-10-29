@@ -12,6 +12,7 @@ import identifyRole from "./identifyRole";
 import adminReg from "./adminRegister";
 import studentReg from "./studentRegister";
 import UserPage from "./Profiles/userpage";
+import AdminPage from "./Profiles/adminPage";
 import studentPage from "./Profiles/studentpage";
 
 export default () => (
@@ -24,6 +25,7 @@ export default () => (
     <Route path="/Login" component={Login} />
     <Route exact path="/Register" component={Register} />
     <Route path="/userpage" component={UserPage} />
+    <Route path="/adminpage" component={AdminPage} />
     <Route path="/idRoles" component={identifyRole} />
     <Route path="/Register/student" component={studentPage} />
   </Switch>

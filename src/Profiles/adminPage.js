@@ -1,6 +1,13 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import profilePic from "../images/10.jpg";
-import { Row, Col, Spinner } from "react-bootstrap";
+import {
+  Row,
+  Col,
+  Spinner,
+  Button,
+  ButtonToolbar,
+  Modal
+} from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 import "./userpage.css";
 import firebase from "../firebase";
@@ -30,7 +37,7 @@ You can also specify the document and add to your collection:
 let setDoc = db.collection('cities').doc('LA').set(data);
 */
 
-class UserPage extends Component {
+class AdminPage extends Component {
   constructor() {
     super();
     this.state = {
@@ -41,6 +48,34 @@ class UserPage extends Component {
   componentDidMount() {
     this.getUserAsync();
   }
+
+  createWorkshop = props => {
+    return (
+      <Modal
+        {...props}
+        size="lg"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
+        <Modal.Header closeButton>
+          <Modal.Title id="contained-modal-title-vcenter">
+            Modal heading
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <h4>Centered Modal</h4>
+          <p>
+            Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
+            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
+            ac consectetur ac, vestibulum at eros.
+          </p>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button onClick={props.onHide}>Close</Button>
+        </Modal.Footer>
+      </Modal>
+    );
+  };
 
   getUserAsync = async () => {
     let usersCollection = db.collection("users").doc("qm8pw3LrLNYWPXm39Vhe");
@@ -55,6 +90,8 @@ class UserPage extends Component {
     const { user } = this.state;
     const userKey = Object.keys(user);
     const isUserLoaded = userKey && userKey.length > 0;
+    const [modalShow, setModalShow] = useState(false);
+
     return (
       <div className="user">
         <Row className="profile">
@@ -73,6 +110,21 @@ class UserPage extends Component {
             )}
           </Col>
         </Row>
+        <Row className="workshops">
+          <Col>
+            <ButtonToolbar>
+              <Button onClick={() => setModalShow(true)}>New Workshop</Button>
+              <createWorkshop
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+              />
+            </ButtonToolbar>
+          </Col>
+          <Col>
+            <Row>List of Workshops</Row>
+            <Row>Singing 101</Row>
+          </Col>
+        </Row>
         <Row className="logistics">
           <Col>
             <Row>{user.badges && user.badges.length}</Row>
@@ -88,4 +140,4 @@ class UserPage extends Component {
   }
 }
 
-export default UserPage;
+export default AdminPage;
