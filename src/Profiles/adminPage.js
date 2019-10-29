@@ -8,6 +8,7 @@ import {
 	ButtonToolbar,
 	Modal,
 } from 'react-bootstrap';
+import WorkshopModal from './WorkshopModal';
 import Image from 'react-bootstrap/Image';
 import './userpage.css';
 import firebase from '../firebase';
@@ -50,35 +51,6 @@ class AdminPage extends Component {
 		this.getUserAsync();
 	}
 
-	CreateWorkshop = () => {
-		console.log('I called createWorkshop');
-		return (
-			<Modal
-				show={this.state.showModal}
-				size="lg"
-				aria-labelledby="contained-modal-title-vcenter"
-				centered
-			>
-				<Modal.Header closeButton>
-					<Modal.Title id="contained-modal-title-vcenter">
-						Modal heading
-					</Modal.Title>
-				</Modal.Header>
-				<Modal.Body>
-					<h4>Centered Modal</h4>
-					<p>
-						Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-						dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
-						ac consectetur ac, vestibulum at eros.
-					</p>
-				</Modal.Body>
-				<Modal.Footer>
-					<Button onClick={this.onHideClick}>Close</Button>
-				</Modal.Footer>
-			</Modal>
-		);
-	};
-
 	getUserAsync = async () => {
 		let usersCollection = db.collection('users').doc('qm8pw3LrLNYWPXm39Vhe');
 
@@ -117,7 +89,12 @@ class AdminPage extends Component {
 					<Col>
 						<ButtonToolbar>
 							<Button onClick={this.onButtonClick}>New Workshop</Button>
-							{showModal && this.CreateWorkshop()}
+							{showModal && (
+								<WorkshopModal
+									showModal={showModal}
+									onHide={this.onHideClick}
+								/>
+							)}
 						</ButtonToolbar>
 					</Col>
 					<Col>
