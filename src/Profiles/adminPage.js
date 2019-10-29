@@ -1,13 +1,6 @@
-import React, { Component, useState } from 'react';
+import React, { Component } from 'react';
 import profilePic from '../images/10.jpg';
-import {
-	Row,
-	Col,
-	Spinner,
-	Button,
-	ButtonToolbar,
-	Modal,
-} from 'react-bootstrap';
+import { Row, Col, Spinner, Button, ButtonToolbar } from 'react-bootstrap';
 import WorkshopModal from './WorkshopModal';
 import Image from 'react-bootstrap/Image';
 import './userpage.css';
@@ -57,6 +50,13 @@ class AdminPage extends Component {
 		let response = await usersCollection.get();
 		let user = await response.data();
 		this.setState({ user });
+	};
+
+	onFormSubmit = input => {
+		const userRef = db.collection('workshops').add({
+			name: input.name,
+			address: input.address,
+		});
 	};
 
 	onButtonClick = () => this.setState({ showModal: true });
