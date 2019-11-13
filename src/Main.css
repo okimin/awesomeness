@@ -21,20 +21,22 @@
 }
 .problem-pic{
 
-  width: 10vmax;
-  height: 10vmax;
+  width: 80%;
+  height: 80%;
   margin:25px;
 }
 
 .place-holder {
-  margin: 40px;
-  width: 10vmax;
-  height: 10vmax;
+  margin: auto;
+  width: 80%;
+  height: 80%;
 }
 
 .problem {
-  margin: 0px 70px 0px 70px;
-  margin-top: 20px;
+  width: 80%;
+  margin: auto;
+  /*margin: 0px 70px 0px 70px;
+  margin-top: 20px;*/
   color: #ffde00;
   border-radius: 20px;
 }
@@ -55,8 +57,8 @@
 
 }
 .solution-pic {
-  width: 10vmax;
-  height: 10vmax;
+  width: 80%;
+  height: 80%;
   margin-left: 0px;
   margin-right: 20px;
   margin-top: 0px;
@@ -81,12 +83,11 @@
 }
 .align-container {
   justify-content: center;
-  max-width: 60vmax;
-  max-height: 55vmax;
-  min-height: 30vmax;
-  min-width:  45vmax;
+  max-width: 60%;
+  max-height: 55%;
+  min-height: 30%;
+  min-width:  45%;
   border-radius: 20px;
   position: sticky;
- /* border: dotted;
-  border-color: black;*/
+  border-color: black;
 }

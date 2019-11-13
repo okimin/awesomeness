@@ -5,7 +5,7 @@ import Image from 'react-bootstrap/Image';
 import './userpage.css';
 import firebase from '../firebase';
 
-var db = firebase.firestore();
+var db = firebase.firestore;
 
 /*
 ADDING THINGS TO FIRESTORE
