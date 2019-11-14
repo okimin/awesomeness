@@ -17,6 +17,7 @@ import { Link } from "react-router-dom";
 
 function Main() {
   return (
+
     <div className="Main">
       {/*<div className="login">
         <div className="welcome">
@@ -30,12 +31,8 @@ function Main() {
       </div>
     */}
        <div className="mission">
-{//
-}
         <h2>
-          <u>
-            <b>Mission</b>
-          </u>
+            Mission
         </h2>
         <p className="mission-text">
           STEMHIVE strives to engage and retain interest to low-income middle
@@ -48,10 +45,8 @@ function Main() {
       <div className="problem">   
         <Container className="align-container">
           <h2 className="title">
-         <u>
-            <b>Problem</b>
-          </u>
-        </h2>
+            Problem
+          </h2>
           <div className="grey-cards">
             <Row className="colorRow">
               <Col xs={4}>
@@ -100,9 +95,7 @@ function Main() {
 
       <div className="solutions">
         <h2>
-          <u>
-            <b>The Solution</b>
-          </u>
+            The Solution
         </h2>
         <div id="Solution-pic">
           <Container className="conatiner-solution">
