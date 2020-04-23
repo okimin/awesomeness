@@ -20,15 +20,8 @@ class GetInvolved extends Component {
 		this.setState({ subject: e.target.value });
 	};
 
-	async handleSubmit(e) {
-		e.preventDefault();
-	}
-
-	handleSubmit(e) {
-		e.preventDefault();
-	}
 	render() {
-		const { email, subject } = this.state;
+		const { subject } = this.state;
 		const isEnabled = subject.length > 20;
 		return (
 			<div className='GetInvolved'>
